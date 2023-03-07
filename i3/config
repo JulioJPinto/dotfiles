@@ -416,6 +416,9 @@ exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpap
 exec_always --no-startup-id ~/.config/polybar/multi_monitor_launch.sh &
 exec_always --no-startup-id ~/.config/polybar/docky/scripts/pywal.sh ~/Pictures/background-blue.jpg &
 
+#Picom
+exec_always --no-startup-id picom --config .config/picom/picom.conf & disown
+
 ################# system applications       
 
 exec --no-startup-id xfce4-power-manager &
